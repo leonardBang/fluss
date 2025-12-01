@@ -121,6 +121,12 @@ const config: Config = {
           ],
       },
     ],
+    [
+      '@docusaurus/plugin-client-redirects',
+      {
+        redirects: require('./generate-redirects.cjs'), // 可留空
+      },
+    ],
   ],
   themeConfig: {
     image: 'img/logo/png/colored_logo.png',
